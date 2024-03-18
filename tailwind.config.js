@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,6 +10,12 @@ export default {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+      },
+      backgroundImage: theme => ({
+        'blue-gradient': 'linear-gradient(to right, blue, lightblue)',
+      }),
+      backgroundClip: {
+        'text': 'text',
       }
     },
   },
